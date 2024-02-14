@@ -16,9 +16,10 @@ pairs(airquality)
 ```
 Regression model of ozone on some predictors
 ```{r}
-fit <- lm(ozone ~ Solar.R + Wind + Temp, data = airquality)
-summary(fit)
+model <- lm(Ozone ~ Wind + Solar.R + Temp, data = airquality)
+summary(model)
 ```
+
 
 
 
