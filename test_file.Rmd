@@ -20,6 +20,11 @@ model <- lm(Ozone ~ Wind + Solar.R + Temp, data = airquality)
 summary(model)
 ```
 
+##plotting pairs
+```{r}
+pairs(airquality)
+```
+
 
 
 
