@@ -10,6 +10,20 @@ library(datasets)
 data("airquality")
 summary(airquality)
 ```
+# Dropping NA values using library(tidyr)
+```{r}
+installed.packages("tidyr")
+clean <- na.omit(airquality)
+dim(clean)
+str(clean)
+```
+#Clean data
+
+```{r}
+clean$Month <- as.factor(clean$Month)
+str(clean)
+```
+
 plotting data
 ```{r}
 pairs(airquality)
@@ -27,11 +41,4 @@ pairs(airquality)
 
 
 
-###loading Titanic dataset
-```{r}
-library(datasets)
-data("Titanic")
-summary(Titanic)
-```
-# Clean and transform the dataset
 
