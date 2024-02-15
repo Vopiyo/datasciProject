@@ -23,8 +23,17 @@ str(clean)
 clean$Month <- as.factor(clean$Month)
 str(clean)
 ```
+# Creating a variable quality where, if the ozone > mean, quality = "bad",else quality = "good"
+```{r}
+x <- mean(clean$ozone)
+Quality <- as.factor(ifelse(clean$ozone > x, "bad", "good"))
+length(Quality)  # Check the length of the vector
+str(clean)
+str(Quality)
+```
 
-plotting data
+#plotting data
+
 ```{r}
 pairs(airquality)
 ```
