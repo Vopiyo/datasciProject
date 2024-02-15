@@ -27,4 +27,11 @@ pairs(airquality)
 
 
 
+###loading Titanic dataset
+```{r}
+library(datasets)
+data("Titanic")
+summary(Titanic)
+```
+# Clean and transform the dataset
 
